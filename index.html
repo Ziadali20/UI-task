@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Link css files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <title>UI</title>
+</head>
+<body>
+
+
+  <!-- Start navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-main">
+      <div class="container-fluid ">
+        
+        <a class="navbar-brand ms-lg-3" href="#"><div class="logo-container d-flex justify-content-center align-items-center"><img src="./logo.svg" alt="Logo"></div></a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ms-lg-4">
+              <a class="nav-link text-white active" href="#">Finance Services</a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- End navbar -->
+  <section>
+    <div class="custom-container">
+      <div class="heading-text ">
+        <h2 class="text-capitalize fw-bold mt-3 ">Personal Finance Services</h2>
+        <h4>Check funds suitable for your need!</h4>
+        <!-- <span class="">Check funds suitable for your need!</span> -->
+      </div>
+  <div class="input-group mb-3 w-100 d-lg-none">
+  <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown for options</button>
+  <ul class="dropdown-menu w-100">
+    <li>
+      <a class="dropdown-item">
+        <div class="option bg-main text-white d-flex justify-content-center align-items-center cursor-pointer">
+          <div class="icon-container d-flex justify-content-center align-items-center">
+            <i class="fa-regular fa-map me-2"></i>
+          </div>
+          <span class="text-capitalize">new cars</span>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="dropdown-item">
+        <div class="option bg-white text-white d-flex justify-content-center align-items-center cursor-pointer">
+          <span class="text-capitalize text-main">used cars</span>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="dropdown-item">
+        <div class="option bg-white text-white d-flex justify-content-center align-items-center cursor-pointer">
+          <span class="text-capitalize text-main">Medical Equipment</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+        <div class="options-container d-none d-lg-block mt-3">
+          <div class="row gy-2 ">
+            <div class="col-lg-4">
+              <div class="option bg-main text-white d-flex justify-content-center align-items-center cursor-pointer">
+                <div class="icon-container d-flex justify-content-center align-items-center">
+                  <i class="fa-regular fa-map me-2"></i>
+                </div>
+                <span class="text-capitalize">new cars</span>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="option bg-white text-white d-flex justify-content-center align-items-center cursor-pointer">
+                
+                <span class="text-capitalize text-main">used cars</span>
+              </div>
+            </div>
+        
+            <div class="col-lg-4">
+              <div class="option bg-white text-white d-flex justify-content-center align-items-center cursor-pointer">
+                <span class="text-capitalize text-main">Medical Equipment</span>
+              </div>
+            </div>
+        
+
+          </div>
+        </div>
+
+        
+        <div class="calculator bg-main mt-3 py-4 px-4">
+          <div class="calculator-heading text-white mb-4">
+            <h2 class="text-capitalize">Installment Calculator</h2>
+            <span>Note: This calculation is not final and does not obligate Alkan Finance</span>
+          </div>
+          <div class="radios-container text-white w-75">
+            <div class="row gy-2">
+              <div class="col-lg-4">
+                <div class=" radio d-flex align-items-center">
+                  <div class="radio-container d-flex justify-content-center align-items-center me-2">
+                    <input type="radio" id="radio1" class="cursor-pointer" name="calculationOption">
+                  </div>
+                  <label for="radio1" class="text-capitalize cursor-pointer">Calculate Installment</label>
+                </div>
+              </div>
+              <div class="col-lg-4 ">
+                <div class=" radio d-flex  align-items-center">
+                  <div class="radio-container d-flex justify-content-center align-items-center me-2">
+                    <input type="radio" id="radio2" class="cursor-pointer" name="calculationOption">
+                  </div>
+                  <label for="radio2" class="text-capitalize cursor-pointer">Calculate item price</label>
+                </div>
+              </div>
+              <div class="col-lg-4 ">
+                <div class=" radio d-flex  align-items-center">
+                  <div class="radio-container d-flex justify-content-center align-items-center me-2">
+                    <input type="radio" id="radio3" class="cursor-pointer" name="calculationOption">
+                  </div>
+                  <label for="radio3" class="text-capitalize cursor-pointer">Calculate down payment</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inputs-container px-3 my-4">
+            <div class="row">
+              <div class="col-lg-4 mb-4">
+                <div class="d-flex flex-column">
+                  <label class="text-capitalize text-white" for="input1">Monthly Income</label>
+                  <input type="number" min="0"  class="ms-1 p-3 my-2 w-100" placeholder="Monthly Income" id="input1"/>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="d-flex flex-column">
+                  <label class="text-capitalize text-white" for="input2">Monthly Debt</label>
+                  <input type="number" min="0"  class="ms-1 p-3 my-2 w-100" placeholder="Monthly Debt" id="input2"/>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="d-flex flex-column">
+                  <label class="text-capitalize text-white" for="input3">item price</label>
+                  <input type="number" min="0"  class="ms-1 p-3 my-2 w-100" placeholder="Item price*" id="input3" required/>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="d-flex flex-column">
+                  <label class="text-capitalize text-white" for="input4">Number Of Monthly Installments</label>
+                  <input type="number" min="0"  class="ms-1 p-3 my-2 w-100" placeholder="Number Of Monthly Installments*" id="input4" required/>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="d-flex flex-column">
+                  <label class="text-capitalize text-white" for="input5">Installment Amount</label>
+                  <input type="number" min="0"  class="ms-1 p-3 my-2 w-100" placeholder="Installment Amount" id="input5"/>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4 d-flex align-items-center">
+                <button class="w-100 text-white py-3 mt-3">Calculate</button>
+            </div>
+
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- Start footer -->
+
+  <footer class="d-none d-lg-block bg-main mt-5">
+    <div class="d-flex justify-content-between align-items-center py-4 custom-container">
+      <span><a href="https://www.ithmaar-solutions.com/" class="text-white text-decoration-none" target="_blank">Designed and Developed by Ithmaar Integrated Solutions</a></span>
+      <span class="text-white">General Terms & Conditions</span>
+    </div>
+  </footer>
+  <!-- End footer -->
+ <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+

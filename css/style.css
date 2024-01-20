@@ -1,0 +1,139 @@
+/* Start global styles */
+body{
+    font-family: 'Mulish', sans-serif;
+}
+:root{
+    --main-color:#0076BE;
+}
+.bg-main{
+    background-color: var(--main-color);
+}
+.text-main{
+    color: var(--main-color);
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+.custom-container{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+
+/* End global styles */
+
+/* Start navbar */
+
+.navbar-brand img{
+    width: 45px;
+    height: 45px;
+}
+@media (min-width:992px) {
+    .active,.nav-item {
+        position: relative !important;
+    }
+    .active::after,.nav-item:hover::after{
+        content: '';
+        position: absolute;
+        width:100%;
+        height: 6px;
+        background-color:#fff ;
+        bottom: -16px;
+        left: 0px;
+    }
+}
+
+
+/* End navbar */
+
+
+/* Start heading-text*/
+.heading-text h2{
+    font-size: 21px;
+    font-weight: 700;
+}
+.heading-text h4{
+    color:#9d9fa2;
+    font-size: 13px;
+}
+/* End heading-text*/
+/* Start options */
+.option{
+    height: 52px;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+}
+.option{
+    font-size: 14px;
+    font-weight: 500;
+}
+@media (min-width:992px) {
+    .options-container{
+        width:520px ;
+    }
+    .option{
+        width: 160px;
+        margin-right: 10px;
+    }
+}
+/* End options */
+
+
+/* Start calculator */
+.calculator{
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+
+.calculator-heading h2{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+}
+.calculator-heading span{
+    font-size: 14px;
+    line-height: 21px;
+}
+.radio-container{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+}
+.radio-container input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+label{
+    font-size: 13px;
+    line-height:19.5px
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+    border-radius: 6px;
+    border: 0px;
+    outline: none;
+}
+input[type="number"]:focus::placeholder{
+    color: var(--main-color) ;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.calculator button{
+    border: 0px;
+    background: #A6D15C;
+    border-radius: 6px;
+}
+.inputs-container input{
+    width: 358px;
+    height: 50px;
+}
+/* End calculator */
